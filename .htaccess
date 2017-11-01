@@ -1,3 +1,3 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.victor-renard.fr$
-RewriteRule ^(.*) http://victor-renard.fr/$1 [QSA,L,R=301]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^victor-renard\.fr$ [NC]
+RewriteRule ^(.*)$ http://victor-renard.fr/$1 [R=301,L]
