@@ -5,14 +5,15 @@ body {
 
 h1.title {
 	font-weight: 600;
-	font-size: 3.4em;
+	font-size: 4em;
 	letter-spacing: 0.05em;
 }
 
 h2.subtitle {
 	font-weight: 400;
-	font-size: 1.2em;
+	font-size: 1.4em;
 	letter-spacing: 0.05em;
+	padding-top: 10px;
 }
 
 h3.sectionTitle {
@@ -21,24 +22,27 @@ h3.sectionTitle {
 }
 
 a {
-	color: #ff0066;
+	color: #BBAE98;
+	font-weight: 600;
 }
 
 a:hover {
-	color: #ff0066;
+	color: #BBAE98;
+	text-decoration: underline;
 }
 
 a.bottomLink {
-	background-color: #ff0066;
+	background-color: #BBAE98;
 	color: white;
 	border-radius: 20px;
 	padding: 5px 12px;
+	text-decoration: none;
 }
 
 a.bottomLink:hover {
 	background-color: white;
-	border:1px #ff0066 solid;
-	color: #ff0066;	
+	border:1px #BBAE98 solid;
+	color: #BBAE98;	
 }
 
 .roundedImage {
