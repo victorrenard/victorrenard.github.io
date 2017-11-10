@@ -27,21 +27,37 @@
 	<meta property="og:locale" content="fr_FR">
 
 	<link rel="shortcut icon" href="img/icone.ico" />
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+	<link rel="stylesheet" href="css/stars.css">
 	<link rel="stylesheet" href="css/styles.css">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 	<![endif]-->
+
+	<script>
+		$(document).ready(function() {
+			$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+				var page = $(this).attr('href'); // Page cible
+				var speed = 750; // Durée de l'animation (en ms)
+				$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+				return false;
+			});
+		});
+	</script>
+
 </head>
 
 <body>
-  	<section class="hero is-fullheight has-text-centered">
-	  <div class="hero-body">
+
+  	<section id="slide-1" class="hero is-fullheight has-text-centered" style="overflow: hidden;">
+	  <div class="hero-body" style="z-index: 10;">
 	    <div class="container">
 	      <h1 class="title">
 	        Victor Renard
@@ -49,13 +65,78 @@
 	      <h2 class="subtitle">
 	        Chef de projet chez <strong><a href="http://www.dagobert.com/" target="blank">Dagobert</a></strong>
 	      </h2>
-	      <p>
-	      	Eurosport - <a href="http://best11.eurosport.com/" target="blank">http://best11.eurosport.com/</a><br>
-	      	XNPC86 - <a href="http://www.xnpc86.fr/" target="blank">http://www.xnpc86.fr/</a><br><br>
-	      	<a href="https://www.linkedin.com/in/victorrenard/" target="blank">Linkedin</a> - contact@victor-renard.fr
-	      </p>
+	      <br>
+	      <!--<a href="#slide-2" class="bottomLink js-scrollTo">À propos de moi</a>-->
 	    </div>
 	  </div>
+	  <div id="stars"></div><div id="stars2"></div>
 	</section>
+	<!--
+	<section id="slide-2" class="hero is-fullheight has-text-centered">
+	  <div class="hero-body">
+	    <div class="container">
+    	<h3 class="title" style="opacity: 0.1">
+        	À propos de moi
+      	</h3>
+      	<br>
+      	<img class="roundedImage" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/005/05a/3d2/02bec76.jpg" alt="Photo de Victor Renard">
+	    <br><br>
+	    25 ans, habite à Montreuil (93)<br> <a href="mailto:contact@victor-renard.fr">contact@victor-renard.fr</a><br>  
+	    <br> 
+	    <strong>Mes compétences :</strong><br>
+	    Gestion de projet, développement Front (HTML/CSS/JS), développement back (PHP) et maîtrise de Photoshop/Illustrator.<br>
+	    <br>
+	    <strong>Mes loisirs :</strong><br>
+	    Football, tennis, jeux vidéos, photographie, cuisine, voyages.<br>
+	    <br>
+	    <br><a href="#slide-3" class="bottomLink js-scrollTo">Mes expériences professionnelles</a>
+
+  	    </div>
+	  </div>
+	</section>
+	<section id="slide-3" class="hero is-fullheight has-text-centered">
+	  <div class="hero-body">
+	    <div class="container">
+	    	<h3 class="title" style="opacity: 0.1">
+	        	Mes expériences professionnelles
+	      	</h3>
+	      	Juin 2014 à maintenant : Chef de projet (75008)<br>
+			Chef de projet chez Dagobert.
+			<br><br>
+			Avril 2016 à Juin 2014 : Intervenant Synerg'Hetic (93)<br>
+			Pendant plus d'un an au sein de <a href="http://www.synerghetic.net/">Synerg'Hetic</a>, la junior entreprise d'HETIC.<br>
+			Chef de projet, consultant SEO et ingénieur son pour Eurosport, La Poste, Sedico et l'IES.
+			<br><br>
+			Juillet à Septembre 2013 : Développement Web & Conception Mobile (75)<br>
+			Stage en entreprise de 3 mois chez Wechef.<br>
+			Développement Web HTML/CSS/JS/PHP/MySQLn conception graphique de l'application mobile.<br><br>
+			Avril à Juin 2012 : Développement Web (86)<br>
+			Stage en entreprise de 3 mois chez <a href="http://www.hoplie.com">HOPLIE</a>.<br>
+			Développement Web orienté objet via Kohana Framework.<br><br>
+			<br><a href="#slide-4" class="bottomLink js-scrollTo">Ma formation</a>
+  	    </div>
+	  </div>
+	</section>
+	<section id="slide-4" class="hero is-fullheight has-text-centered">
+	  <div class="hero-body">
+	    <div class="container">
+	    	<h3 class="title" style="opacity: 0.1">
+	        	Ma formation
+	      	</h3>
+			2012 à 2015 : HETIC à Montreuil (93)<br>
+			Hautes Études dans les Technologies d'Information et de Communication.<br>
+			Formation aux métiers d'Internet, de l'Informatique et du Multimédia.<br><br>
+			2010 à 2012 : DUT SRC à Blois (41)<br>
+			Diplôme Universitaire de Technologie sur les Services et Réseaux de Communication.<br>
+			Formation pluridisciplinaire orientée sur la communication, l'infographie et le développement.<br><br>
+			2009 à 2010 : BAC SSI à Poitiers (86)<br>
+			BAC Scientifique option Siences de l'Ingénieur.<br>
+			Formation scientifique générale.<br><br>
+  	    </div>
+	  </div>
+	  Intégré et développé avec Bulma par Victor Renard - Hébergé sur GitHub Pages
+	</section>
+-->
+
 </body>
 </html>

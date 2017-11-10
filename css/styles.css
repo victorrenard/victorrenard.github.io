@@ -1,17 +1,51 @@
 body {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'EB Garamond', serif;
+	color: #333333;
 }
 
 h1.title {
-	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 3.4em;
+	letter-spacing: 0.05em;
+}
+
+h2.subtitle {
+	font-weight: 400;
+	font-size: 1.2em;
+	letter-spacing: 0.05em;
+}
+
+h3.sectionTitle {
+	font-size: 2em;
 	font-weight: 700;
-	font-size: 4em;
 }
 
 a {
-	color: black;
+	color: #ff0066;
 }
 
 a:hover {
-	color: #0099cc;
+	color: #ff0066;
+}
+
+a.bottomLink {
+	background-color: #ff0066;
+	color: white;
+	border-radius: 20px;
+	padding: 5px 12px;
+}
+
+a.bottomLink:hover {
+	background-color: white;
+	border:1px #ff0066 solid;
+	color: #ff0066;	
+}
+
+.roundedImage {
+	overflow:hidden;
+    -webkit-border-radius:150px;
+    -moz-border-radius:150px;
+    border-radius:150px;
+    width:150px;
+    height:150px;
 }
