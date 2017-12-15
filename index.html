@@ -16,127 +16,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Victor Renard - Chef de projet chez Dagobert</title>
-	<meta name="description" content="Diplômé d'HETIC (Expert en Ingénierie de la Communication Numérique) en 2015 et chef de projet chez Dagobert depuis 2014 — Paris, France.">
+	<meta name="description" content="Diplômé d'HETIC (Expert en Ingénierie de la Communication Numérique) en 2015 et Chef de projet Web & Digital chez Dagobert depuis 2014 — Paris, France.">
 	<meta name="author" content="Victor Renard">
 
 	<meta property="og:url" content="http://victor-renard.fr" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Victor Renard - Chef de projet chez Dagobert" />
-	<meta property="og:description" content="Diplômé d'HETIC (Expert en Ingénierie de la Communication Numérique) en 2015 et chef de projet chez Dagobert depuis 2014 — Paris, France." />
+	<meta property="og:description" content="Diplômé d'HETIC (Expert en Ingénierie de la Communication Numérique) en 2015 et chef de projet Web & Digital chez Dagobert depuis 2014 — Paris, France." />
 	<meta property="og:image" content="http://victor-renard.fr/img/facebook.jpg" />
 	<meta property="og:locale" content="fr_FR">
 
 	<link rel="shortcut icon" href="img/icone.ico" />
-	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
-	<link rel="stylesheet" href="css/stars.css">
-	<link rel="stylesheet" href="css/styles.css">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+	<link rel="stylesheet" href="css/stars-minify.css">
+	<link rel="stylesheet" href="css/styles-minify.css">
 
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 	<![endif]-->
 
-	<script>
-		$(document).ready(function() {
-			$('.js-scrollTo').on('click', function() { // Au clic sur un élément
-				var page = $(this).attr('href'); // Page cible
-				var speed = 750; // Durée de l'animation (en ms)
-				$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-				return false;
-			});
-		});
-	</script>
-
 </head>
 
 <body>
 
-  	<section id="slide-1" class="hero is-fullheight has-text-centered" style="overflow: hidden;">
-	  <div class="hero-body" style="z-index: 10;">
+  	<section class="hero is-fullheight">
+	  <div class="hero-body">
 	    <div class="container">
+	    <div class="border-left"></div>
+	    	<!--<span class="lang"><a class="lang_selector trn" data-value="fr" href="#">FR</a> - <a class="lang_selector trn" data-value="en" href="#">EN</a></span>-->
 	      <h1 class="title">
 	        Victor Renard
 	      </h1>
-	      <h2 class="subtitle">
-	        Chef de projet chez <a class="strongLink" href="http://www.dagobert.com/" target="blank">Dagobert</a>
+	      <h2 class="subtitle trn">
+	        <a class='link-white' href='http://www.dagobert.com/' target='blank'>Chef de projet</a> chez <a class='link-white' href='http://www.dagobert.com/' target='blank'>Dagobert</a> (et Freelance)
 	      </h2>
-	      <br>
-	      <a href="#slide-2" class="bottomLink js-scrollTo">Mes expériences professionnelles</a>
+	      <span class="content">
+	      	Diplômé d'<a href="http://www.hetic.net/" class="link-transparent" target="blank">HETIC</a> en 2015, ma formation et mes expériences professionnelles me permettent aujourd’hui d’aborder les différentes phases d’un projet Web & Digital. Mes stages en tant que Développeur me servent à la bonne compréhenssion des sujets techniques. Je sais également utiliser plusieurs logiciels de production graphique (Photoshop, Illustrator, Sketch, etc.) et me tiens constamment informé des dernières nouveautés. Enfin, je maîtrise de multiples outils assurant le bon suivi d'un projet, tels que Basecamp, Trello, Redmine, etc. Je saurais vous proposer des méthodes et processus de production adaptés !
+	      	<br><br>
+	      	N'hésitez pas à me contacter si vous avez un projet (Site Web, application Mobile, etc), je serais ravis de pouvoir vous conseiller :)
+			</span>
+	      <br><br>
+	      <a href="http://victor-renard.fr/Victor-Renard-CV-201801.pdf" class="link-button" target="blank">Mon CV</a> <a href="https://www.linkedin.com/in/victorrenard/" class="link-button" target="blank">LinkedIn</a>&nbsp;&nbsp;<span class="contact">ou par mail :&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:contact@victor-renard.fr" class="link-white">contact@victor-renard.fr</a></span>
+	      <br><br>
+	      <span class="mention">Intégré avec <a href="https://bulma.io/" class="link-saumon" target="blank">Bulma.io</a> et <a href="https://codepen.io/saransh/pen/BKJun" class="link-saumon" target="blank">Parallax Star</a> - Hébergé sur <a href="https://github.com/victorrenard/victorrenard.github.io" class="link-saumon" target="blank">GitHub</a></span>
 	    </div>
 	  </div>
 	  <div id="stars"></div><div id="stars2"></div>
 	</section>
-	
-	<section id="slide-2" class="hero is-fullheight has-text-centered">
-	  <div class="hero-body">
-	    <div class="container">
-	    	<h3 class="title" style="opacity: 0.1">
-	        	Mes expériences professionnelles
-	      	</h3>
-	      	Juin 2014 à maintenant : Chef de projet (75008)<br>
-			Chef de projet chez Dagobert.
-			<br><br>
-			Avril 2016 à Juin 2014 : Intervenant Synerg'Hetic (93)<br>
-			Pendant plus d'un an au sein de <a href="http://www.synerghetic.net/">Synerg'Hetic</a>, la junior entreprise d'HETIC.<br>
-			Chef de projet, consultant SEO et ingénieur son pour Eurosport, La Poste, Sedico et l'IES.
-			<br><br>
-			Juillet à Septembre 2013 : Développement Web & Conception Mobile (75)<br>
-			Stage en entreprise de 3 mois chez Wechef.<br>
-			Développement Web HTML/CSS/JS/PHP/MySQLn conception graphique de l'application mobile.<br><br>
-			Avril à Juin 2012 : Développement Web (86)<br>
-			Stage en entreprise de 3 mois chez <a href="http://www.hoplie.com">HOPLIE</a>.<br>
-			Développement Web orienté objet via Kohana Framework.<br><br>
-			<br><a href="#slide-3" class="bottomLink js-scrollTo">Ma formation</a>
-  	    </div>
-	  </div>
-	</section>
-
-	<section id="slide-3" class="hero is-fullheight has-text-centered">
-	  <div class="hero-body">
-	    <div class="container">
-	    	<h3 class="title" style="opacity: 0.1">
-	        	Ma formation
-	      	</h3>
-			2012 à 2015 : HETIC à Montreuil (93)<br>
-			Hautes Études dans les Technologies d'Information et de Communication.<br>
-			Formation aux métiers d'Internet, de l'Informatique et du Multimédia.<br><br>
-			2010 à 2012 : DUT SRC à Blois (41)<br>
-			Diplôme Universitaire de Technologie sur les Services et Réseaux de Communication.<br>
-			Formation pluridisciplinaire orientée sur la communication, l'infographie et le développement.<br><br>
-			2009 à 2010 : BAC SSI à Poitiers (86)<br>
-			BAC Scientifique option Siences de l'Ingénieur.<br>
-			Formation scientifique générale.<br><br>
-			<br><a href="#slide-4" class="bottomLink js-scrollTo">A propos de moi</a>
-  	    </div>
-	  </div>
-	</section>
-
-	<section id="slide-4" class="hero is-fullheight has-text-centered">
-	  <div class="hero-body">
-	    <div class="container">
-    	<h3 class="title" style="opacity: 0.1">
-        	À propos de moi
-      	</h3>
-      	<br>
-      	<img class="roundedImage" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/005/05a/3d2/02bec76.jpg" alt="Photo de Victor Renard">
-	    <br><br>
-	    25 ans, habite à Montreuil (93)<br> <a href="mailto:contact@victor-renard.fr">contact@victor-renard.fr</a><br>  
-	    <br> 
-	    <strong>Mes compétences :</strong><br>
-	    Gestion de projet, développement Front (HTML/CSS/JS), développement back (PHP) et maîtrise de Photoshop/Illustrator.<br>
-	    <br>
-	    <strong>Mes loisirs :</strong><br>
-	    Football, tennis, jeux vidéos, photographie, cuisine, voyages.
-  	    </div>
-	  </div>
-	  Intégré et développé avec Bulma par Victor Renard - Hébergé sur GitHub Pages
-	</section>
-
 
 </body>
 </html>
